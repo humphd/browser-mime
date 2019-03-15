@@ -1,0 +1,19 @@
+{
+  "name": "browser-mime",
+  "version": "0.0.1",
+  "description": "MIME types for use in browsers",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mime-db": "^1.38.0",
+    "mime-types": "^2.1.22",
+    "puppeteer": "^1.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node tools/build-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
