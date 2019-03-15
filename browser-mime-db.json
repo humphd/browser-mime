@@ -1,0 +1,569 @@
+{
+  "application/activity+json": {},
+  "application/alto-costmap+json": {},
+  "application/alto-costmapfilter+json": {},
+  "application/alto-directory+json": {},
+  "application/alto-endpointcost+json": {},
+  "application/alto-endpointcostparams+json": {},
+  "application/alto-endpointprop+json": {},
+  "application/alto-endpointpropparams+json": {},
+  "application/alto-error+json": {},
+  "application/alto-networkmap+json": {},
+  "application/alto-networkmapfilter+json": {},
+  "application/atom+xml": {
+    "extensions": [
+      "atom"
+    ]
+  },
+  "application/calendar+json": {},
+  "application/coap-group+json": {},
+  "application/csvm+json": {},
+  "application/dicom+json": {},
+  "application/dns+json": {},
+  "application/ecmascript": {
+    "extensions": [
+      "ecma",
+      "es"
+    ]
+  },
+  "application/expect-ct-report+json": {},
+  "application/fhir+json": {},
+  "application/fido.trusted-apps+json": {},
+  "application/geo+json": {
+    "extensions": [
+      "geojson"
+    ]
+  },
+  "application/javascript": {
+    "extensions": [
+      "js",
+      "mjs"
+    ]
+  },
+  "application/jf2feed+json": {},
+  "application/jose+json": {},
+  "application/jrd+json": {},
+  "application/json": {
+    "extensions": [
+      "json",
+      "map"
+    ]
+  },
+  "application/json-patch+json": {},
+  "application/jsonml+json": {
+    "extensions": [
+      "jsonml"
+    ]
+  },
+  "application/jwk+json": {},
+  "application/jwk-set+json": {},
+  "application/ld+json": {
+    "extensions": [
+      "jsonld"
+    ]
+  },
+  "application/manifest+json": {
+    "extensions": [
+      "webmanifest"
+    ]
+  },
+  "application/merge-patch+json": {},
+  "application/mud+json": {},
+  "application/ppsp-tracker+json": {},
+  "application/problem+json": {},
+  "application/rdap+json": {},
+  "application/reputon+json": {},
+  "application/rss+xml": {
+    "extensions": [
+      "rss"
+    ]
+  },
+  "application/scim+json": {},
+  "application/senml+json": {},
+  "application/sensml+json": {},
+  "application/stix+json": {},
+  "application/taxii+json": {},
+  "application/tlsrpt+json": {},
+  "application/vcard+json": {},
+  "application/vnd.amadeus+json": {},
+  "application/vnd.api+json": {},
+  "application/vnd.apothekende.reservation+json": {},
+  "application/vnd.artisan+json": {},
+  "application/vnd.avalon+json": {},
+  "application/vnd.bbf.usp.msg+json": {},
+  "application/vnd.bekitzur-stech+json": {},
+  "application/vnd.byu.uapi+json": {},
+  "application/vnd.capasystems-pg+json": {},
+  "application/vnd.collection+json": {},
+  "application/vnd.collection.doc+json": {},
+  "application/vnd.collection.next+json": {},
+  "application/vnd.coreos.ignition+json": {},
+  "application/vnd.datapackage+json": {},
+  "application/vnd.dataresource+json": {},
+  "application/vnd.document+json": {},
+  "application/vnd.drive+json": {},
+  "application/vnd.futoin+json": {},
+  "application/vnd.geo+json": {},
+  "application/vnd.hal+json": {},
+  "application/vnd.hc+json": {},
+  "application/vnd.heroku+json": {},
+  "application/vnd.hyper+json": {},
+  "application/vnd.hyper-item+json": {},
+  "application/vnd.hyperdrive+json": {},
+  "application/vnd.ims.lis.v2.result+json": {},
+  "application/vnd.ims.lti.v2.toolconsumerprofile+json": {},
+  "application/vnd.ims.lti.v2.toolproxy+json": {},
+  "application/vnd.ims.lti.v2.toolproxy.id+json": {},
+  "application/vnd.ims.lti.v2.toolsettings+json": {},
+  "application/vnd.ims.lti.v2.toolsettings.simple+json": {},
+  "application/vnd.las.las+json": {},
+  "application/vnd.leap+json": {},
+  "application/vnd.mason+json": {},
+  "application/vnd.micro+json": {},
+  "application/vnd.miele+json": {},
+  "application/vnd.nearst.inv+json": {},
+  "application/vnd.oftn.l10n+json": {},
+  "application/vnd.oma.lwm2m+json": {},
+  "application/vnd.oracle.resource+json": {},
+  "application/vnd.pagerduty+json": {},
+  "application/vnd.restful+json": {},
+  "application/vnd.shootproof+json": {},
+  "application/vnd.siren+json": {},
+  "application/vnd.tableschema+json": {},
+  "application/vnd.think-cell.ppttc+json": {},
+  "application/vnd.vel+json": {},
+  "application/vnd.xacml+json": {},
+  "application/voucher-cms+json": {},
+  "application/webpush-options+json": {},
+  "application/x-javascript": {},
+  "application/x-web-app-manifest+json": {
+    "extensions": [
+      "webapp"
+    ]
+  },
+  "application/xhtml+xml": {
+    "extensions": [
+      "xhtml",
+      "xht"
+    ]
+  },
+  "application/xml": {
+    "extensions": [
+      "xml",
+      "xsl",
+      "xsd",
+      "rng"
+    ]
+  },
+  "application/yang-data+json": {},
+  "application/yang-patch+json": {},
+  "image/apng": {
+    "extensions": [
+      "apng"
+    ]
+  },
+  "image/bmp": {
+    "extensions": [
+      "bmp"
+    ]
+  },
+  "image/gif": {
+    "extensions": [
+      "gif"
+    ]
+  },
+  "image/jpeg": {
+    "extensions": [
+      "jpeg",
+      "jpg",
+      "jpe"
+    ]
+  },
+  "image/pjpeg": {},
+  "image/png": {
+    "extensions": [
+      "png"
+    ]
+  },
+  "image/svg+xml": {
+    "extensions": [
+      "svg",
+      "svgz"
+    ]
+  },
+  "image/vnd.microsoft.icon": {
+    "extensions": [
+      "ico"
+    ]
+  },
+  "image/webp": {
+    "extensions": [
+      "webp"
+    ]
+  },
+  "image/x-icon": {
+    "extensions": [
+      "ico"
+    ]
+  },
+  "image/x-xbitmap": {
+    "extensions": [
+      "xbm"
+    ]
+  },
+  "multipart/x-mixed-replace": {},
+  "text/1d-interleaved-parityfec": {},
+  "text/cache-manifest": {
+    "extensions": [
+      "appcache",
+      "manifest"
+    ]
+  },
+  "text/calender": {},
+  "text/cmd": {},
+  "text/coffeescript": {
+    "extensions": [
+      "coffee",
+      "litcoffee"
+    ]
+  },
+  "text/css": {
+    "extensions": [
+      "css"
+    ]
+  },
+  "text/csv-schema": {},
+  "text/dns": {},
+  "text/ecmascript": {},
+  "text/encaprtp": {},
+  "text/enriched": {},
+  "text/fwdred": {},
+  "text/grammar-ref-list": {},
+  "text/html": {
+    "extensions": [
+      "html",
+      "htm",
+      "shtml"
+    ]
+  },
+  "text/jade": {
+    "extensions": [
+      "jade"
+    ]
+  },
+  "text/javascript": {},
+  "text/jcr-cnd": {},
+  "text/jsx": {
+    "extensions": [
+      "jsx"
+    ]
+  },
+  "text/less": {
+    "extensions": [
+      "less"
+    ]
+  },
+  "text/markdown": {
+    "extensions": [
+      "markdown",
+      "md"
+    ]
+  },
+  "text/mathml": {
+    "extensions": [
+      "mml"
+    ]
+  },
+  "text/mizar": {},
+  "text/n3": {
+    "extensions": [
+      "n3"
+    ]
+  },
+  "text/parameters": {},
+  "text/parityfec": {},
+  "text/plain": {
+    "extensions": [
+      "txt",
+      "text",
+      "conf",
+      "def",
+      "list",
+      "log",
+      "in",
+      "ini"
+    ]
+  },
+  "text/provenance-notation": {},
+  "text/prs.fallenstein.rst": {},
+  "text/prs.lines.tag": {
+    "extensions": [
+      "dsc"
+    ]
+  },
+  "text/prs.prop.logic": {},
+  "text/raptorfec": {},
+  "text/red": {},
+  "text/rfc822-headers": {},
+  "text/richtext": {
+    "extensions": [
+      "rtx"
+    ]
+  },
+  "text/rtp-enc-aescm128": {},
+  "text/rtploopback": {},
+  "text/rtx": {},
+  "text/sgml": {
+    "extensions": [
+      "sgml",
+      "sgm"
+    ]
+  },
+  "text/shex": {
+    "extensions": [
+      "shex"
+    ]
+  },
+  "text/slim": {
+    "extensions": [
+      "slim",
+      "slm"
+    ]
+  },
+  "text/strings": {},
+  "text/stylus": {
+    "extensions": [
+      "stylus",
+      "styl"
+    ]
+  },
+  "text/t140": {},
+  "text/troff": {
+    "extensions": [
+      "t",
+      "tr",
+      "roff",
+      "man",
+      "me",
+      "ms"
+    ]
+  },
+  "text/turtle": {
+    "extensions": [
+      "ttl"
+    ]
+  },
+  "text/ulpfec": {},
+  "text/uri-list": {
+    "extensions": [
+      "uri",
+      "uris",
+      "urls"
+    ]
+  },
+  "text/vnd.a": {},
+  "text/vnd.abc": {},
+  "text/vnd.ascii-art": {},
+  "text/vnd.curl": {
+    "extensions": [
+      "curl"
+    ]
+  },
+  "text/vnd.curl.dcurl": {
+    "extensions": [
+      "dcurl"
+    ]
+  },
+  "text/vnd.curl.mcurl": {
+    "extensions": [
+      "mcurl"
+    ]
+  },
+  "text/vnd.curl.scurl": {
+    "extensions": [
+      "scurl"
+    ]
+  },
+  "text/vnd.debian.copyright": {},
+  "text/vnd.dmclientscript": {},
+  "text/vnd.dvb.subtitle": {
+    "extensions": [
+      "sub"
+    ]
+  },
+  "text/vnd.esmertec.theme-descriptor": {},
+  "text/vnd.fly": {
+    "extensions": [
+      "fly"
+    ]
+  },
+  "text/vnd.fmi.flexstor": {
+    "extensions": [
+      "flx"
+    ]
+  },
+  "text/vnd.gml": {},
+  "text/vnd.graphviz": {
+    "extensions": [
+      "gv"
+    ]
+  },
+  "text/vnd.hgl": {},
+  "text/vnd.in3d.3dml": {
+    "extensions": [
+      "3dml"
+    ]
+  },
+  "text/vnd.in3d.spot": {
+    "extensions": [
+      "spot"
+    ]
+  },
+  "text/vnd.iptc.newsml": {},
+  "text/vnd.iptc.nitf": {},
+  "text/vnd.latex-z": {},
+  "text/vnd.motorola.reflex": {},
+  "text/vnd.ms-mediapackage": {},
+  "text/vnd.net2phone.commcenter.command": {},
+  "text/vnd.radisys.msml-basic-layout": {},
+  "text/vnd.senx.warpscript": {},
+  "text/vnd.si.uricatalogue": {},
+  "text/vnd.trolltech.linguist": {},
+  "text/vnd.wap.si": {},
+  "text/vnd.wap.sl": {},
+  "text/vnd.wap.wml": {
+    "extensions": [
+      "wml"
+    ]
+  },
+  "text/vnd.wap.wmlscript": {
+    "extensions": [
+      "wmls"
+    ]
+  },
+  "text/vtt": {
+    "extensions": [
+      "vtt"
+    ]
+  },
+  "text/x-asm": {
+    "extensions": [
+      "s",
+      "asm"
+    ]
+  },
+  "text/x-c": {
+    "extensions": [
+      "c",
+      "cc",
+      "cxx",
+      "cpp",
+      "h",
+      "hh",
+      "dic"
+    ]
+  },
+  "text/x-component": {
+    "extensions": [
+      "htc"
+    ]
+  },
+  "text/x-fortran": {
+    "extensions": [
+      "f",
+      "for",
+      "f77",
+      "f90"
+    ]
+  },
+  "text/x-gwt-rpc": {},
+  "text/x-handlebars-template": {
+    "extensions": [
+      "hbs"
+    ]
+  },
+  "text/x-java-source": {
+    "extensions": [
+      "java"
+    ]
+  },
+  "text/x-jquery-tmpl": {},
+  "text/x-lua": {
+    "extensions": [
+      "lua"
+    ]
+  },
+  "text/x-markdown": {
+    "extensions": [
+      "mkd"
+    ]
+  },
+  "text/x-nfo": {
+    "extensions": [
+      "nfo"
+    ]
+  },
+  "text/x-opml": {
+    "extensions": [
+      "opml"
+    ]
+  },
+  "text/x-org": {
+    "extensions": [
+      "org"
+    ]
+  },
+  "text/x-pascal": {
+    "extensions": [
+      "p",
+      "pas"
+    ]
+  },
+  "text/x-processing": {
+    "extensions": [
+      "pde"
+    ]
+  },
+  "text/x-sass": {
+    "extensions": [
+      "sass"
+    ]
+  },
+  "text/x-scss": {
+    "extensions": [
+      "scss"
+    ]
+  },
+  "text/x-setext": {
+    "extensions": [
+      "etx"
+    ]
+  },
+  "text/x-sfv": {
+    "extensions": [
+      "sfv"
+    ]
+  },
+  "text/x-suse-ymp": {
+    "extensions": [
+      "ymp"
+    ]
+  },
+  "text/x-uuencode": {
+    "extensions": [
+      "uu"
+    ]
+  },
+  "text/xml": {
+    "extensions": [
+      "xml"
+    ]
+  },
+  "text/xml-external-parsed-entity": {},
+  "text/yaml": {
+    "extensions": [
+      "yaml",
+      "yml"
+    ]
+  }
+}
