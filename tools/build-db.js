@@ -25,16 +25,20 @@ async function processAllMimeTypes(browser) {
             const page = await browser.newPage();
 
             // Wait on something to get logged to the console (see views/public/index.js)
-            page.once('console', msg => {
+            page.once('console', async msg => {
+                let supported;
                 try {
-                    const result = JSON.parse(msg.text());
+                    result = JSON.parse(msg.text());
     
                     // We write a JSON string like {"mimeType": "text/plain", "supported": true},
                     // try to parse it and see if we should log it (success only).
-                    resolve(result.supported);
+                    supported = result.supported;
                 } catch(e) {
                     console.warn(`JSON parsing error for mime type='${mimeType}': ${msg.text()}`);
-                    resolve(false);
+                    supported = false;
+                } finally {
+                    await page.close();
+                    resolve(supported);
                 }
             });
         
@@ -46,20 +50,16 @@ async function processAllMimeTypes(browser) {
     for(const mimeType of Object.keys(mime)) {
         const supported = await testMimeType(mimeType);
         if(supported) {
-            const extensions = mime[mimeType].extensions;
-            console.log(mimeType);
+            console.log(mimeType, mime[mimeType]);
 
             // Record this in our new db object
-            browserMime[mimeType] = {};
-            if(extensions) {
-                browserMime[mimeType].extensions = extensions;
-            }
+            browserMime[mimeType] = mime[mimeType];
         }
     }
 
     // Write out the new db file
     const json = JSON.stringify(browserMime, null, 2);
-    fs.writeFile('../browser-mime-db.json', json, async (err) => {
+    fs.writeFile('browser-mime-db.json', json, async (err) => {
         if(err) {
             console.error('Unable to write browser-mime-db.json', err.message);
         } else {
