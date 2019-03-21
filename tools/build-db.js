@@ -59,7 +59,7 @@ async function processAllMimeTypes(browser) {
 
     // Write out the new db file
     const json = JSON.stringify(browserMime, null, 2);
-    fs.writeFile('browser-mime-db.json', json, async (err) => {
+    fs.writeFile('dist/browser-mime-db.json', json, async (err) => {
         if(err) {
             console.error('Unable to write browser-mime-db.json', err.message);
         } else {
