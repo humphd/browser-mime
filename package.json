@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "update-mime-types": "git subtree pull --prefix mime-types https://github.com/jshttp/mime-types.git master --squash",
     "build": "node tools/build-db.js"
   },
   "keywords": [],
