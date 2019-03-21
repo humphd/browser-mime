@@ -7,14 +7,18 @@
     "express-handlebars": "^3.0.2",
     "mime-db": "^1.38.0",
     "mime-types": "^2.1.22",
+    "mocha": "^6.0.2",
+    "parcel": "^1.12.3",
     "puppeteer": "^1.13.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-mime-types": "git subtree pull --prefix mime-types https://github.com/jshttp/mime-types.git master --squash",
-    "build": "node tools/build-db.js"
+    "build-db": "node tools/build-db.js",
+    "build": "parcel build mime-types/index.js --detailed-report"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "main": "dist/index.js",
+  "author": "David Humphrey <david.humphrey@senecacollege.ca>",
+  "license": "MIT",
+  "dependencies": {}
 }
