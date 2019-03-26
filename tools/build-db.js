@@ -62,6 +62,8 @@ async function processAllMimeTypes(browser) {
             // Record this in our new db object
             const mimeInfo = mime[mimeType];
             if(mimeInfo.extensions) {
+                // Strip out the .source property, we don't need it (or the extra size)
+                delete mimeInfo.source;
                 browserMime[mimeType] = mime[mimeType];
                 console.log(chalk.green(`${mimeType} - supported`));
             } else {
