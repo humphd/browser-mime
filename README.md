@@ -1,7 +1,8 @@
 # browser-mime
 
-MIME types that can be parsed/rendered in browsers.  The list is automatically
-generated from [mime-db](https://github.com/jshttp/mime-db).
+MIME types that can be parsed/rendered in most browsers.  The list is automatically
+generated from [mime-db](https://github.com/jshttp/mime-db).  Manual types and
+extension information is also included in [src/initial-db.json](src/initial-db.json).
 
 To rebuild the JS library in `dist/`:
 

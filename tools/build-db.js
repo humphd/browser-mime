@@ -51,7 +51,7 @@ async function processAllMimeTypes(browser) {
     for(const mimeType of Object.keys(mime)) {
         // Skip any types we already have pre-seeded in the db
         if(browserMime[mimeType]) {
-            console.log(chalk.green(`${mimeType} - supported`));
+            console.log(chalk.green(`${mimeType} - supported (manually included)`));
             continue;
         }
 
@@ -66,8 +66,7 @@ async function processAllMimeTypes(browser) {
                 // We don't need them (or the extra size)
                 delete mimeInfo.source;
                 delete mimeInfo.compressible;
-
-                browserMime[mimeType] = mime[mimeType];
+                browserMime[mimeType] = mimeInfo;
                 console.log(chalk.green(`${mimeType} - supported`));
             } else {
                 console.log(chalk.yellow(`${mimeType} - supported, but no extensions, ignoring`));
@@ -79,7 +78,7 @@ async function processAllMimeTypes(browser) {
     const json = JSON.stringify(browserMime, null, 2);
     fs.writeFile('dist/browser-mime-db.json', json, async (err) => {
         if(err) {
-            console.error('Unable to write browser-mime-db.json', err.message);
+            console.error(chalk.red('Unable to write browser-mime-db.json'), err.message);
         } else {
             console.log('Wrote browser-mime-db.json');
         }

@@ -1,114 +1,109 @@
 {
   "application/xhtml+xml": {
-    "source": "iana",
-    "compressible": true,
     "extensions": [
       "xhtml",
-      "xht"
+      "xht",
+      "xhtm"
+    ]
+  },
+  "text/html": {
+    "extensions": [
+      "html",
+      "htm",
+      "shtml",
+      "shtm"
     ]
   },
   "image/apng": {
-    "compressible": false,
     "extensions": [
       "apng"
     ]
   },
-  "application/atom+xml": {
-    "compressible": true,
+  "application/wasm": {
     "extensions": [
-      "atom"
+      "wasm"
     ]
   },
-  "application/ecmascript": {
-    "compressible": true,
+  "audio/mp3": {
     "extensions": [
-      "ecma",
-      "es"
+      "mp3"
     ]
   },
-  "application/geo+json": {
-    "compressible": true,
+  "audio/wav": {
     "extensions": [
-      "geojson"
+      "wav"
+    ]
+  },
+  "audio/x-flac": {
+    "extensions": [
+      "flac"
+    ]
+  },
+  "audio/x-m4a": {
+    "extensions": [
+      "m4a"
     ]
   },
   "application/javascript": {
     "charset": "UTF-8",
-    "compressible": true,
     "extensions": [
       "js",
       "mjs"
     ]
   },
-  "application/json": {
-    "charset": "UTF-8",
-    "compressible": true,
+  "video/x-m4v": {
     "extensions": [
-      "json",
-      "map"
+      "m4v"
     ]
   },
-  "application/jsonml+json": {
-    "compressible": true,
+  "video/ogg": {
     "extensions": [
-      "jsonml"
+      "ogv",
+      "ogm"
     ]
   },
-  "application/ld+json": {
-    "compressible": true,
+  "application/epub+zip": {
     "extensions": [
-      "jsonld"
+      "epub"
     ]
   },
-  "application/manifest+json": {
-    "charset": "UTF-8",
-    "compressible": true,
+  "application/font-woff": {
     "extensions": [
-      "webmanifest"
+      "woff"
     ]
   },
-  "application/ogg": {
-    "compressible": false,
+  "application/gzip": {
     "extensions": [
-      "ogx"
+      "gz",
+      "gzip",
+      "tgz"
     ]
   },
-  "application/rss+xml": {
-    "compressible": true,
+  "application/zip": {
     "extensions": [
-      "rss"
+      "zip"
     ]
   },
-  "application/x-web-app-manifest+json": {
-    "compressible": true,
+  "application/tar": {
     "extensions": [
-      "webapp"
+      "tar"
     ]
   },
-  "application/xml": {
-    "compressible": true,
+  "application/pdf": {
     "extensions": [
-      "xml",
-      "xsl",
-      "xsd",
-      "rng"
+      "pdf"
     ]
   },
-  "audio/mp3": {
-    "compressible": false,
+  "video/mpeg": {
     "extensions": [
-      "mp3"
-    ]
-  },
-  "audio/mp4": {
-    "compressible": false,
-    "extensions": [
-      "m4a",
-      "mp4a"
+      "mpeg",
+      "mpg",
+      "mpe",
+      "m1v",
+      "m2v"
     ]
   },
   "audio/mpeg": {
-    "compressible": false,
     "extensions": [
       "mpga",
       "mp2",
@@ -118,22 +113,82 @@
       "m3a"
     ]
   },
+  "application/atom+xml": {
+    "extensions": [
+      "atom"
+    ]
+  },
+  "application/ecmascript": {
+    "extensions": [
+      "ecma",
+      "es"
+    ]
+  },
+  "application/geo+json": {
+    "extensions": [
+      "geojson"
+    ]
+  },
+  "application/json": {
+    "charset": "UTF-8",
+    "extensions": [
+      "json",
+      "map"
+    ]
+  },
+  "application/jsonml+json": {
+    "extensions": [
+      "jsonml"
+    ]
+  },
+  "application/ld+json": {
+    "extensions": [
+      "jsonld"
+    ]
+  },
+  "application/manifest+json": {
+    "charset": "UTF-8",
+    "extensions": [
+      "webmanifest"
+    ]
+  },
+  "application/ogg": {
+    "extensions": [
+      "ogx"
+    ]
+  },
+  "application/rss+xml": {
+    "extensions": [
+      "rss"
+    ]
+  },
+  "application/x-web-app-manifest+json": {
+    "extensions": [
+      "webapp"
+    ]
+  },
+  "application/xml": {
+    "extensions": [
+      "xml",
+      "xsl",
+      "xsd",
+      "rng"
+    ]
+  },
+  "audio/mp4": {
+    "extensions": [
+      "m4a",
+      "mp4a"
+    ]
+  },
   "audio/ogg": {
-    "compressible": false,
     "extensions": [
       "oga",
       "ogg",
       "spx"
     ]
   },
-  "audio/wav": {
-    "compressible": false,
-    "extensions": [
-      "wav"
-    ]
-  },
   "audio/webm": {
-    "compressible": false,
     "extensions": [
       "weba"
     ]
@@ -144,19 +199,16 @@
     ]
   },
   "image/bmp": {
-    "compressible": true,
     "extensions": [
       "bmp"
     ]
   },
   "image/gif": {
-    "compressible": false,
     "extensions": [
       "gif"
     ]
   },
   "image/jpeg": {
-    "compressible": false,
     "extensions": [
       "jpeg",
       "jpg",
@@ -164,13 +216,11 @@
     ]
   },
   "image/png": {
-    "compressible": false,
     "extensions": [
       "png"
     ]
   },
   "image/svg+xml": {
-    "compressible": true,
     "extensions": [
       "svg",
       "svgz"
@@ -187,7 +237,6 @@
     ]
   },
   "image/x-icon": {
-    "compressible": true,
     "extensions": [
       "ico"
     ]
@@ -198,7 +247,6 @@
     ]
   },
   "text/cache-manifest": {
-    "compressible": true,
     "extensions": [
       "appcache",
       "manifest"
@@ -212,17 +260,8 @@
   },
   "text/css": {
     "charset": "UTF-8",
-    "compressible": true,
     "extensions": [
       "css"
-    ]
-  },
-  "text/html": {
-    "compressible": true,
-    "extensions": [
-      "html",
-      "htm",
-      "shtml"
     ]
   },
   "text/jade": {
@@ -231,19 +270,16 @@
     ]
   },
   "text/jsx": {
-    "compressible": true,
     "extensions": [
       "jsx"
     ]
   },
   "text/less": {
-    "compressible": true,
     "extensions": [
       "less"
     ]
   },
   "text/markdown": {
-    "compressible": true,
     "extensions": [
       "markdown",
       "md"
@@ -255,13 +291,11 @@
     ]
   },
   "text/n3": {
-    "compressible": true,
     "extensions": [
       "n3"
     ]
   },
   "text/plain": {
-    "compressible": true,
     "extensions": [
       "txt",
       "text",
@@ -279,7 +313,6 @@
     ]
   },
   "text/richtext": {
-    "compressible": true,
     "extensions": [
       "rtx"
     ]
@@ -324,7 +357,6 @@
     ]
   },
   "text/uri-list": {
-    "compressible": true,
     "extensions": [
       "uri",
       "uris",
@@ -393,7 +425,6 @@
   },
   "text/vtt": {
     "charset": "UTF-8",
-    "compressible": true,
     "extensions": [
       "vtt"
     ]
@@ -444,7 +475,6 @@
     ]
   },
   "text/x-markdown": {
-    "compressible": true,
     "extensions": [
       "mkd"
     ]
@@ -460,7 +490,6 @@
     ]
   },
   "text/x-org": {
-    "compressible": true,
     "extensions": [
       "org"
     ]
@@ -472,7 +501,6 @@
     ]
   },
   "text/x-processing": {
-    "compressible": true,
     "extensions": [
       "pde"
     ]
@@ -498,7 +526,6 @@
     ]
   },
   "text/x-suse-ymp": {
-    "compressible": true,
     "extensions": [
       "ymp"
     ]
@@ -509,7 +536,6 @@
     ]
   },
   "text/xml": {
-    "compressible": true,
     "extensions": [
       "xml"
     ]
@@ -521,21 +547,13 @@
     ]
   },
   "video/mp4": {
-    "compressible": false,
     "extensions": [
       "mp4",
       "mp4v",
       "mpg4"
     ]
   },
-  "video/ogg": {
-    "compressible": false,
-    "extensions": [
-      "ogv"
-    ]
-  },
   "video/webm": {
-    "compressible": false,
     "extensions": [
       "webm"
     ]

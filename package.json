@@ -16,7 +16,8 @@
     "test": "mocha test",
     "update-mime-types": "git subtree pull --prefix mime-types https://github.com/jshttp/mime-types.git master --squash",
     "build-db": "node tools/build-db.js",
-    "build": "parcel build mime-types/index.js --detailed-report"
+    "build": "parcel build mime-types/index.js --detailed-report",
+    "mime-server": "node ./tools/server-cli.js"
   },
   "main": "dist/index.js",
   "author": "David Humphrey <david.humphrey@senecacollege.ca>",
