@@ -1,0 +1,11 @@
+{
+  "application/xhtml+xml": {
+    "source": "iana",
+    "compressible": true,
+    "extensions": ["xhtml","xht"]
+  },
+  "image/apng": {
+    "compressible": false,
+    "extensions": ["apng"]
+  }
+}

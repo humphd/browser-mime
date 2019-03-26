@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "MIME types for use in browsers",
   "devDependencies": {
+    "chalk": "^2.4.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mime-db": "^1.38.0",

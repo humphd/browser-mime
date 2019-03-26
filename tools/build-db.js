@@ -1,4 +1,5 @@
 const fs = require('fs');
+const chalk = require('chalk');
 const puppeteer = require('puppeteer');
 /**
  * The mime-db object is organized by mime type, and
@@ -14,8 +15,9 @@ const puppeteer = require('puppeteer');
 const mime = require('mime-db');
 const server = require('./server');
 
-// Our new browser mime db
-const browserMime = {};
+// Our new browser mime db.  We pre-seed it with some types we know should
+// exist, but don't necessarily follow the design of our automated test below.
+const browserMime = require('../src/initial-db.json');
 
 async function processAllMimeTypes(browser) {
     const port = server.start();
@@ -25,7 +27,7 @@ async function processAllMimeTypes(browser) {
             const page = await browser.newPage();
 
             // Wait on something to get logged to the console (see views/public/index.js)
-            page.once('console', async msg => {
+            page.on('console', async msg => {
                 let supported;
                 try {
                     result = JSON.parse(msg.text());
@@ -33,12 +35,11 @@ async function processAllMimeTypes(browser) {
                     // We write a JSON string like {"mimeType": "text/plain", "supported": true},
                     // try to parse it and see if we should log it (success only).
                     supported = result.supported;
-                } catch(e) {
-                    console.warn(`JSON parsing error for mime type='${mimeType}': ${msg.text()}`);
-                    supported = false;
-                } finally {
+                    
                     await page.close();
                     resolve(supported);
+                } catch(e) {
+                    console.warn(chalk.gray(`Ignoring JSON parsing error for mime type='${mimeType}': ${msg.text()}`));
                 }
             });
         
@@ -48,12 +49,24 @@ async function processAllMimeTypes(browser) {
 
     // Loop through all mime type keys, and print any that are supported, with extensions
     for(const mimeType of Object.keys(mime)) {
-        const supported = await testMimeType(mimeType);
-        if(supported) {
-            console.log(mimeType, mime[mimeType]);
+        // Skip any types we already have pre-seeded in the db
+        if(mime[mimeType]) {
+            console.log(chalk.green(`${mimeType} - supported`));
+            continue;
+        }
 
+        const supported = await testMimeType(mimeType);
+        if(!supported) {
+            console.log(chalk.red(`${mimeType} - not supported`));
+        } else {
             // Record this in our new db object
-            browserMime[mimeType] = mime[mimeType];
+            const mimeInfo = mime[mimeType];
+            if(mimeInfo.extensions) {
+                browserMime[mimeType] = mime[mimeType];
+                console.log(chalk.green(`${mimeType} - supported`));
+            } else {
+                console.log(chalk.yellow(`${mimeType} - supported, but no extensions, ignoring`));
+            }
         }
     }
 

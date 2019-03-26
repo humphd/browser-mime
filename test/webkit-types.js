@@ -14,21 +14,7 @@ module.exports = {
         { type: 'image/x-icon' }, // Favicons don't have a MIME type in the registry either.
         { type: 'image/pjpeg' }, //  We only get one MIME type per UTI, hence our need to add these manually
 
-        // JPEG (image/jpeg)
-        { type: 'image/jpg' },
-        { type: 'image/jp_' },
-        { type: 'image/jpe_' },
-        { type: 'application/jpg' },
-        { type: 'application/x-jpg' },
-        { type: 'image/pipeg' },
-        { type: 'image/vnd.switfview-jpeg' },
-        { type: 'image/x-xbitmap' },
-
-        // GIF (image/gif)
-        { type: 'image/gi_' },
-
         // PNG (image/png)
-        { type: 'application/png' },
         { type: 'application/x-png' },
 
         // TIFF (image/tiff)
@@ -77,7 +63,6 @@ module.exports = {
         { type: 'text/html' },
         { type: 'text/xml' },
         { type: 'text/xsl' },
-        { type: 'text/plain' },
         { type: 'application/xml' },
         { type: 'application/xhtml+xml' },
         { type: 'application/vnd.wap.xhtml+xml' },
@@ -120,19 +105,8 @@ module.exports = {
         { type: 'audio/webm', extensions: 'webm' },
 
         // MPEG
-        { type: 'audio/mpeg', extensions: 'm1a' },
-        { type: 'audio/mpeg', extensions: 'm2a' },
-        { type: 'audio/mpeg', extensions: 'm1s' },
-        { type: 'audio/mpeg', extensions: 'mpa' },
-        { type: 'video/mpeg', extensions: 'mpg' },
-        { type: 'video/mpeg', extensions: 'm15' },
-        { type: 'video/mpeg', extensions: 'm1s' },
-        { type: 'video/mpeg', extensions: 'm1v' },
-        { type: 'video/mpeg', extensions: 'm75' },
-        { type: 'video/mpeg', extensions: 'mpa' },
-        { type: 'video/mpeg', extensions: 'mpeg' },
-        { type: 'video/mpeg', extensions: 'mpm' },
-        { type: 'video/mpeg', extensions: 'mpv' },
+        { type: 'audio/mpeg', extensions: 'm1a,m2a,m1s,mpa' },
+        { type: 'video/mpeg', extensions: 'mpg,m15,m1s,m1v,m75,mpa,mpeg,mpm,mpv' },
 
         // MPEG playlist
         { type: 'application/vnd.apple.mpegurl', extensions: 'm3u8' },
@@ -152,16 +126,11 @@ module.exports = {
 
         // MP3
         { type: 'audio/mp3', extensions: 'mp3' },
-        { type: 'audio/x-mp3', extensions: 'mp3' },
-        { type: 'audio/x-mpeg', extensions: 'mp3' },
 
         // MPEG-2
-        { type: 'video/x-mpeg2', extensions: 'mp2' },
-        { type: 'video/mpeg2', extensions: 'vob' },
-        { type: 'video/mpeg2', extensions: 'mod' },
+        { type: 'video/mpeg2', extensions: 'mod,vob,mp2' },
         { type: 'video/m2ts', extensions: 'm2ts' },
-        { type: 'video/x-m2ts', extensions: 'm2t' },
-        { type: 'video/x-m2ts', extensions: 'ts' },
+        { type: 'video/x-m2ts', extensions: 'm2t,ts' },
 
         // 3GP/3GP2
         { type: 'audio/3gpp', extensions: '3gpp' },
@@ -169,8 +138,7 @@ module.exports = {
         { type: 'application/x-mpeg', extensions: 'amc' },
 
         // AAC
-        { type: 'audio/aac', extensions: 'aac' },
-        { type: 'audio/aac', extensions: 'adts' },
+        { type: 'audio/aac', extensions: 'aac,adts' },
         { type: 'audio/x-aac', extensions: 'm4r' },
 
         // CoreAudio File
@@ -181,51 +149,25 @@ module.exports = {
         { type: 'audio/x-wav', extensions: 'wav' },
         { type: 'audio/vnd.wave', extensions: 'wav' },
 
-        { type: 'image/x-ms-bmp', extensions: 'image/bmp' },
-        { type: 'image/x-windows-bmp', extensions: 'image/bmp' },
-        { type: 'image/x-bmp', extensions: 'image/bmp' },
-        { type: 'image/x-bitmap', extensions: 'image/bmp' },
-        { type: 'image/x-ms-bitmap', extensions: 'image/bmp' },
-        { type: 'image/jpg', extensions: 'image/jpeg' },
-        { type: 'image/pjpeg', extensions: 'image/jpeg' },
-        { type: 'image/x-png', extensions: 'image/png' },
-        { type: 'image/vnd.rim.png', extensions: 'image/png' },
-        { type: 'image/ico', extensions: 'image/vnd.microsoft.icon' },
-        { type: 'image/icon', extensions: 'image/vnd.microsoft.icon' },
-        { type: 'text/ico', extensions: 'image/vnd.microsoft.icon' },
-        { type: 'application/ico', extensions: 'image/vnd.microsoft.icon' },
-        { type: 'image/x-icon', extensions: 'image/vnd.microsoft.icon' },
-        { type: 'audio/vnd.qcelp', extensions: 'audio/qcelp' },
-        { type: 'audio/qcp', extensions: 'audio/qcelp' },
-        { type: 'audio/vnd.qcp', extensions: 'audio/qcelp' },
-        { type: 'audio/wav', extensions: 'audio/x-wav' },
-        { type: 'audio/vnd.wave', extensions: 'audio/x-wav' },
-        { type: 'audio/mid', extensions: 'audio/midi' },
-        { type: 'audio/sp-midi', extensions: 'audio/midi' },
-        { type: 'audio/x-mid', extensions: 'audio/midi' },
-        { type: 'audio/x-midi', extensions: 'audio/midi' },
-        { type: 'audio/x-mpeg', extensions: 'audio/mpeg' },
-        { type: 'audio/mp3', extensions: 'audio/mpeg' },
-        { type: 'audio/x-mp3', extensions: 'audio/mpeg' },
-        { type: 'audio/mpeg3', extensions: 'audio/mpeg' },
-        { type: 'audio/x-mpeg3', extensions: 'audio/mpeg' },
-        { type: 'audio/mpg3', extensions: 'audio/mpeg' },
-        { type: 'audio/mpg', extensions: 'audio/mpeg' },
-        { type: 'audio/x-mpg', extensions: 'audio/mpeg' },
-        { type: 'audio/m4a', extensions: 'audio/mp4' },
-        { type: 'audio/x-m4a', extensions: 'audio/mp4' },
-        { type: 'audio/x-mp4', extensions: 'audio/mp4' },
-        { type: 'audio/x-aac', extensions: 'audio/aac' },
-        { type: 'audio/x-amr', extensions: 'audio/amr' },
-        { type: 'audio/mpegurl', extensions: 'audio/x-mpegurl' },
-        { type: 'audio/flac', extensions: 'audio/x-flac' },
-        { type: 'video/3gp', extensions: 'video/3gpp' },
-        { type: 'video/avi', extensions: 'video/x-msvideo' },
-        { type: 'video/x-m4v', extensions: 'video/mp4' },
-        { type: 'video/x-quicktime', extensions: 'video/quicktime' },
-        { type: 'application/java', extensions: 'application/java-archive' },
-        { type: 'application/x-java-archive', extensions: 'application/java-archive' },
-        { type: 'application/x-zip-compressed', extensions: 'application/zip' },
-        { type: 'text/cache-manifest', extensions: 'text/plain' }
+        { type: 'image/bmp' },
+        { type: 'image/jpeg' },
+        { type: 'image/png' },
+        { type: 'image/vnd.microsoft.icon' },
+        { type: 'audio/qcelp' },
+
+        { type: 'audio/midi' },
+        { type: 'audio/mpeg' },
+        { type: 'audio/mp4' },
+        { type: 'audio/amr' },
+        { type: 'audio/x-mpegurl' },
+        { type: 'audio/x-flac' },
+        { type: 'video/3gpp' },
+        { type: 'video/x-msvideo' },
+        { type: 'video/mp4' },
+        { type: 'video/quicktime' },
+        { type: 'application/java-archive' },
+        { type: 'application/java-archive' },
+        { type: 'application/zip' },
+        { type: 'text/plain' }
     ]
 };

@@ -9,19 +9,19 @@ module.exports = {
         //   from file extension -> MIME type.  Thus file extensions listed here will
         //   work consistently across platforms.
         { type: 'video/webm', extensions: 'webm' },
-        { type: 'application/wasm', extensions: 'wasm' },
-        { type: 'application/x-chrome-extension', extensions: 'crx' },
+//humphd        { type: 'application/wasm', extensions: 'wasm' },
+//humphd        { type: 'application/x-chrome-extension', extensions: 'crx' },
         { type: 'application/xhtml+xml', extensions: 'xhtml,xht,xhtm' },
         { type: 'audio/flac', extensions: 'flac' },
         { type: 'audio/mp3', extensions: 'mp3' },
-        { type: 'audio/ogg', extensions: 'ogg,oga,opus' },
+        { type: 'audio/ogg', extensions: 'ogg,oga' }, // humphd: removed opus extension
         { type: 'audio/wav', extensions: 'wav' },
-        { type: 'audio/webm', extensions: 'webm' },
+//humphd        { type: 'audio/webm', extensions: 'webm' },
         { type: 'audio/x-m4a', extensions: 'm4a' },
         { type: 'image/gif', extensions: 'gif' },
         { type: 'image/jpeg', extensions: 'jpeg,jpg' },
         { type: 'image/png', extensions: 'png' },
-        { type: 'image/apng', extensions: 'png' },
+        { type: 'image/apng', extensions: 'apng' }, // humphd: added apng
         { type: 'image/webp', extensions: 'webp' },
         { type: 'multipart/related', extensions: 'mht,mhtml' },
         { type: 'text/css', extensions: 'css' },
@@ -57,7 +57,7 @@ module.exports = {
         { type: 'application/x-shockwave-flash', extensions: 'swf,swl' },
         { type: 'application/x-tar', extensions: 'tar' },
         { type: 'application/zip', extensions: 'zip' },
-        { type: 'audio/mpeg', extensions: 'mp3' },
+//        { type: 'audio/mpeg', extensions: 'mp3' },
         // This is the platform mapping on recent versions of Windows 10.
         { type: 'audio/webm', extensions: 'weba' },
         { type: 'image/bmp', extensions: 'bmp' },

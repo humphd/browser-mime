@@ -1,12 +1,17 @@
 # browser-mime
 
-MIME types for use in browsers
+MIME types for use in browsers.
+
+To rebuild the JS library in `dist/`:
+
+```
+npm build
+```
 
 To generate the database:
 
 ```
-npm install
-npm run build
+npm run build-db
 ```
 
 This will reproduce [`browser-mime-db.json`](browser-mime-db.json)
