@@ -50,7 +50,7 @@ async function processAllMimeTypes(browser) {
     // Loop through all mime type keys, and print any that are supported, with extensions
     for(const mimeType of Object.keys(mime)) {
         // Skip any types we already have pre-seeded in the db
-        if(mime[mimeType]) {
+        if(browserMime[mimeType]) {
             console.log(chalk.green(`${mimeType} - supported`));
             continue;
         }
@@ -62,8 +62,11 @@ async function processAllMimeTypes(browser) {
             // Record this in our new db object
             const mimeInfo = mime[mimeType];
             if(mimeInfo.extensions) {
-                // Strip out the .source property, we don't need it (or the extra size)
+                // Strip out the .source and .compressible properties.
+                // We don't need them (or the extra size)
                 delete mimeInfo.source;
+                delete mimeInfo.compressible;
+
                 browserMime[mimeType] = mime[mimeType];
                 console.log(chalk.green(`${mimeType} - supported`));
             } else {

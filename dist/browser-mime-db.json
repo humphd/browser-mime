@@ -7,15 +7,19 @@
       "xht"
     ]
   },
+  "image/apng": {
+    "compressible": false,
+    "extensions": [
+      "apng"
+    ]
+  },
   "application/atom+xml": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "atom"
     ]
   },
   "application/ecmascript": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "ecma",
@@ -23,14 +27,12 @@
     ]
   },
   "application/geo+json": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "geojson"
     ]
   },
   "application/javascript": {
-    "source": "iana",
     "charset": "UTF-8",
     "compressible": true,
     "extensions": [
@@ -39,7 +41,6 @@
     ]
   },
   "application/json": {
-    "source": "iana",
     "charset": "UTF-8",
     "compressible": true,
     "extensions": [
@@ -48,14 +49,12 @@
     ]
   },
   "application/jsonml+json": {
-    "source": "apache",
     "compressible": true,
     "extensions": [
       "jsonml"
     ]
   },
   "application/ld+json": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "jsonld"
@@ -69,14 +68,12 @@
     ]
   },
   "application/ogg": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "ogx"
     ]
   },
   "application/rss+xml": {
-    "source": "apache",
     "compressible": true,
     "extensions": [
       "rss"
@@ -89,7 +86,6 @@
     ]
   },
   "application/xml": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "xml",
@@ -105,7 +101,6 @@
     ]
   },
   "audio/mp4": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "m4a",
@@ -113,7 +108,6 @@
     ]
   },
   "audio/mpeg": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "mpga",
@@ -125,7 +119,6 @@
     ]
   },
   "audio/ogg": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "oga",
@@ -140,40 +133,29 @@
     ]
   },
   "audio/webm": {
-    "source": "apache",
     "compressible": false,
     "extensions": [
       "weba"
     ]
   },
   "audio/x-wav": {
-    "source": "apache",
     "extensions": [
       "wav"
     ]
   },
-  "image/apng": {
-    "compressible": false,
-    "extensions": [
-      "apng"
-    ]
-  },
   "image/bmp": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "bmp"
     ]
   },
   "image/gif": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "gif"
     ]
   },
   "image/jpeg": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "jpeg",
@@ -182,14 +164,12 @@
     ]
   },
   "image/png": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "png"
     ]
   },
   "image/svg+xml": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "svg",
@@ -197,32 +177,27 @@
     ]
   },
   "image/vnd.microsoft.icon": {
-    "source": "iana",
     "extensions": [
       "ico"
     ]
   },
   "image/webp": {
-    "source": "apache",
     "extensions": [
       "webp"
     ]
   },
   "image/x-icon": {
-    "source": "apache",
     "compressible": true,
     "extensions": [
       "ico"
     ]
   },
   "image/x-xbitmap": {
-    "source": "apache",
     "extensions": [
       "xbm"
     ]
   },
   "text/cache-manifest": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "appcache",
@@ -236,7 +211,6 @@
     ]
   },
   "text/css": {
-    "source": "iana",
     "charset": "UTF-8",
     "compressible": true,
     "extensions": [
@@ -244,7 +218,6 @@
     ]
   },
   "text/html": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "html",
@@ -270,7 +243,6 @@
     ]
   },
   "text/markdown": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "markdown",
@@ -278,20 +250,17 @@
     ]
   },
   "text/mathml": {
-    "source": "nginx",
     "extensions": [
       "mml"
     ]
   },
   "text/n3": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "n3"
     ]
   },
   "text/plain": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "txt",
@@ -305,20 +274,17 @@
     ]
   },
   "text/prs.lines.tag": {
-    "source": "iana",
     "extensions": [
       "dsc"
     ]
   },
   "text/richtext": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "rtx"
     ]
   },
   "text/sgml": {
-    "source": "iana",
     "extensions": [
       "sgml",
       "sgm"
@@ -342,7 +308,6 @@
     ]
   },
   "text/troff": {
-    "source": "iana",
     "extensions": [
       "t",
       "tr",
@@ -353,14 +318,12 @@
     ]
   },
   "text/turtle": {
-    "source": "iana",
     "charset": "UTF-8",
     "extensions": [
       "ttl"
     ]
   },
   "text/uri-list": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "uri",
@@ -369,73 +332,61 @@
     ]
   },
   "text/vnd.curl": {
-    "source": "iana",
     "extensions": [
       "curl"
     ]
   },
   "text/vnd.curl.dcurl": {
-    "source": "apache",
     "extensions": [
       "dcurl"
     ]
   },
   "text/vnd.curl.mcurl": {
-    "source": "apache",
     "extensions": [
       "mcurl"
     ]
   },
   "text/vnd.curl.scurl": {
-    "source": "apache",
     "extensions": [
       "scurl"
     ]
   },
   "text/vnd.dvb.subtitle": {
-    "source": "iana",
     "extensions": [
       "sub"
     ]
   },
   "text/vnd.fly": {
-    "source": "iana",
     "extensions": [
       "fly"
     ]
   },
   "text/vnd.fmi.flexstor": {
-    "source": "iana",
     "extensions": [
       "flx"
     ]
   },
   "text/vnd.graphviz": {
-    "source": "iana",
     "extensions": [
       "gv"
     ]
   },
   "text/vnd.in3d.3dml": {
-    "source": "iana",
     "extensions": [
       "3dml"
     ]
   },
   "text/vnd.in3d.spot": {
-    "source": "iana",
     "extensions": [
       "spot"
     ]
   },
   "text/vnd.wap.wml": {
-    "source": "iana",
     "extensions": [
       "wml"
     ]
   },
   "text/vnd.wap.wmlscript": {
-    "source": "iana",
     "extensions": [
       "wmls"
     ]
@@ -448,14 +399,12 @@
     ]
   },
   "text/x-asm": {
-    "source": "apache",
     "extensions": [
       "s",
       "asm"
     ]
   },
   "text/x-c": {
-    "source": "apache",
     "extensions": [
       "c",
       "cc",
@@ -467,13 +416,11 @@
     ]
   },
   "text/x-component": {
-    "source": "nginx",
     "extensions": [
       "htc"
     ]
   },
   "text/x-fortran": {
-    "source": "apache",
     "extensions": [
       "f",
       "for",
@@ -487,7 +434,6 @@
     ]
   },
   "text/x-java-source": {
-    "source": "apache",
     "extensions": [
       "java"
     ]
@@ -504,13 +450,11 @@
     ]
   },
   "text/x-nfo": {
-    "source": "apache",
     "extensions": [
       "nfo"
     ]
   },
   "text/x-opml": {
-    "source": "apache",
     "extensions": [
       "opml"
     ]
@@ -522,7 +466,6 @@
     ]
   },
   "text/x-pascal": {
-    "source": "apache",
     "extensions": [
       "p",
       "pas"
@@ -545,13 +488,11 @@
     ]
   },
   "text/x-setext": {
-    "source": "apache",
     "extensions": [
       "etx"
     ]
   },
   "text/x-sfv": {
-    "source": "apache",
     "extensions": [
       "sfv"
     ]
@@ -563,13 +504,11 @@
     ]
   },
   "text/x-uuencode": {
-    "source": "apache",
     "extensions": [
       "uu"
     ]
   },
   "text/xml": {
-    "source": "iana",
     "compressible": true,
     "extensions": [
       "xml"
@@ -582,7 +521,6 @@
     ]
   },
   "video/mp4": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "mp4",
@@ -591,14 +529,12 @@
     ]
   },
   "video/ogg": {
-    "source": "iana",
     "compressible": false,
     "extensions": [
       "ogv"
     ]
   },
   "video/webm": {
-    "source": "apache",
     "compressible": false,
     "extensions": [
       "webm"

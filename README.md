@@ -1,6 +1,7 @@
 # browser-mime
 
-MIME types for use in browsers.
+MIME types that can be parsed/rendered in browsers.  The list is automatically
+generated from [mime-db](https://github.com/jshttp/mime-db).
 
 To rebuild the JS library in `dist/`:
 
@@ -8,7 +9,7 @@ To rebuild the JS library in `dist/`:
 npm build
 ```
 
-To generate the database:
+To regenerate the database:
 
 ```
 npm run build-db
