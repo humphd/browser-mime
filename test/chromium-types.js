@@ -5,7 +5,7 @@ module.exports = {
         { type: 'video/webm', extensions: 'webm' },
         { type: 'application/wasm', extensions: 'wasm' },
         { type: 'application/xhtml+xml', extensions: 'xhtml,xht,xhtm' },
-        { type: 'audio/x-flac', extensions: 'flac' }, // humphd: changed to x-flac
+        { type: 'audio/x-flac', extensions: 'flac' }, // humphd: changed to x-flac (per db.json)
         { type: 'audio/mp3', extensions: 'mp3' },
         { type: 'audio/ogg', extensions: 'ogg,oga' }, // humphd: removed opus extension
         { type: 'audio/wav', extensions: 'wav' },
@@ -26,7 +26,7 @@ module.exports = {
         { type: 'application/font-woff', extensions: 'woff' },
         { type: 'application/gzip', extensions: 'gz,tgz' },
         { type: 'application/javascript', extensions: 'js' },
-        { type: 'application/json', extensions: 'json' },  // Per http://www.ietf.org/rfc/rfc4627.txt.
+        { type: 'application/json', extensions: 'json' },
         { type: 'application/pdf', extensions: 'pdf' },
         { type: 'application/zip', extensions: 'zip' },
         { type: 'image/bmp', extensions: 'bmp' },
