@@ -5,7 +5,7 @@ const chromiumTypes = require('./chromium-types');
 const webkitTypes = require('./webkit-types');
 
 function add(a, b) {
-    return a + b;
+    return (+a) + (+b);
 }
 
 describe('Adding two numbers together', function() {
