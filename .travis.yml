@@ -1,6 +1,10 @@
 # This is my config for Travis CI
 language: node_js
 
+os:
+  - linux
+  - osx
+
 # Versions of Node to support
 node_js:
   - "8"
@@ -16,4 +20,3 @@ before_script:
 script:
   - npm test
 
-  
