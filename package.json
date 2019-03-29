@@ -5,6 +5,7 @@
   "repository": "github:humphd/browser-mime",
   "devDependencies": {
     "chalk": "^2.4.2",
+    "eslint": "^5.15.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mime-db": "^1.38.0",
@@ -18,7 +19,8 @@
     "update-mime-types": "git subtree pull --prefix mime-types https://github.com/jshttp/mime-types.git master --squash",
     "build-db": "node tools/build-db.js",
     "build": "parcel build mime-types/index.js --detailed-report",
-    "mime-server": "node ./tools/server-cli.js"
+    "mime-server": "node ./tools/server-cli.js",
+    "eslint": "eslint tools test views"
   },
   "main": "dist/index.js",
   "author": "David Humphrey <david.humphrey@senecacollege.ca>",

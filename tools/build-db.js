@@ -30,7 +30,7 @@ async function processAllMimeTypes(browser) {
             page.on('console', async msg => {
                 let supported;
                 try {
-                    result = JSON.parse(msg.text());
+                    let result = JSON.parse(msg.text());
     
                     // We write a JSON string like {"mimeType": "text/plain", "supported": true},
                     // try to parse it and see if we should log it (success only).
