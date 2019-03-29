@@ -12,4 +12,5 @@ node_js:
 cache: npm
 
 before_script:
+  - npm run eslint
   - npm run build
