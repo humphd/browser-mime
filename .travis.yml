@@ -9,5 +9,7 @@ node_js:
   - "lts/*"
   - "node"
 
+cache: npm
+
 before_script:
   - npm run build
