@@ -4,20 +4,6 @@ const mimeDatabase = require('../dist/browser-mime-db.json');
 const chromiumTypes = require('./chromium-types');
 const webkitTypes = require('./webkit-types');
 
-function add(a, b) {
-    return (+a) + (+b);
-}
-
-describe('Adding two numbers together', function() {
-    it('should sum two whole numbers', function() {
-        assert.strictEqual(add(2, 2), 4);
-    });
-
-    it('should convert strings to numbers', function() {
-        assert.strictEqual(add("2", "2"), 4);
-    });
-});
-
 [chromiumTypes, webkitTypes].forEach((browserType) => {
     const { browser, mimeTypes } = browserType;
     
