@@ -2,6 +2,7 @@
   "name": "browser-mime",
   "version": "0.0.1",
   "description": "MIME types for use in browsers",
+  "repository": "github:humphd/browser-mime",
   "devDependencies": {
     "chalk": "^2.4.2",
     "express": "^4.16.4",
@@ -10,7 +11,7 @@
     "mime-types": "^2.1.22",
     "mocha": "^6.0.2",
     "parcel": "^1.12.3",
-    "puppeteer": "^1.13.0"
+    "puppeteer": "^1.14.0"
   },
   "scripts": {
     "test": "mocha test",
