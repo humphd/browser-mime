@@ -67,11 +67,6 @@
       "epub"
     ]
   },
-  "application/font-woff": {
-    "extensions": [
-      "woff"
-    ]
-  },
   "application/gzip": {
     "extensions": [
       "gz",
@@ -111,6 +106,26 @@
       "mp3",
       "m2a",
       "m3a"
+    ]
+  },
+  "font/otf": {
+    "extensions": [
+      "otf"
+    ]
+  },
+  "font/ttf": {
+    "extensions": [
+      "ttf"
+    ]
+  },
+  "font/woff": {
+    "extensions": [
+      "woff"
+    ]
+  },
+  "font/woff2": {
+    "extensions": [
+      "woff2"
     ]
   },
   "application/atom+xml": {
