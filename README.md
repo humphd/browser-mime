@@ -1,4 +1,4 @@
-# browser-mime
+# browser-mime [![Build Status](https://travis-ci.org/humphd/browser-mime.svg?branch=master)](https://travis-ci.org/humphd/browser-mime)
 
 MIME types that can be parsed/rendered in most browsers.  The list is automatically
 generated from [mime-db](https://github.com/jshttp/mime-db).  Manual types and

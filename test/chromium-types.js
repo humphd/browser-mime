@@ -23,7 +23,7 @@ module.exports = {
         { type: 'video/ogg', extensions: 'ogv,ogm' },
         { type: 'image/x-icon', extensions: 'ico' },
         { type: 'application/epub+zip', extensions: 'epub' },
-        { type: 'application/font-woff', extensions: 'woff' },
+        { type: 'font/woff', extensions: 'woff' }, // humphd: switched from application/font-woff
         { type: 'application/gzip', extensions: 'gz,tgz' },
         { type: 'application/javascript', extensions: 'js' },
         { type: 'application/json', extensions: 'json' },
