@@ -5,14 +5,15 @@
   "repository": "github:humphd/browser-mime",
   "devDependencies": {
     "chalk": "^2.4.2",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mime-db": "^1.38.0",
-    "mime-types": "^2.1.22",
     "mocha": "^6.0.2",
     "parcel": "^1.12.3",
-    "puppeteer": "^1.14.0"
+    "puppeteer": "^1.14.0",
+    "release-it": "^10.4.0",
+    "run.env": "^1.1.0"
   },
   "scripts": {
     "test": "mocha test",
@@ -20,9 +21,14 @@
     "build-db": "node tools/build-db.js",
     "build": "parcel build mime-types/index.js --detailed-report",
     "mime-server": "node ./tools/server-cli.js",
-    "eslint": "eslint tools test views"
+    "eslint": "eslint tools test views",
+    "release": "run.env release-it"
   },
   "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "author": "David Humphrey <david.humphrey@senecacollege.ca>",
   "license": "MIT",
   "dependencies": {}

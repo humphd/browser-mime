@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "beforeBump": "npm run build",
+    "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
+  },
+  "git": {
+    "pushRepo": "git@github.com:humphd/browser-mime.git",
+    "tagName": "v%s"
+  },
+  "npm": {
+    "publish": true
+  },
+  "github": {
+    "release": true,
+    "releaseName": "browser-mime %s Released"
+  }
+}
