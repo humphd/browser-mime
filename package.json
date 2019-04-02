@@ -1,6 +1,6 @@
 {
   "name": "browser-mime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MIME types for use in browsers",
   "repository": "github:humphd/browser-mime",
   "devDependencies": {
