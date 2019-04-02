@@ -67,23 +67,6 @@
       "epub"
     ]
   },
-  "application/gzip": {
-    "extensions": [
-      "gz",
-      "gzip",
-      "tgz"
-    ]
-  },
-  "application/zip": {
-    "extensions": [
-      "zip"
-    ]
-  },
-  "application/tar": {
-    "extensions": [
-      "tar"
-    ]
-  },
   "application/pdf": {
     "extensions": [
       "pdf"
